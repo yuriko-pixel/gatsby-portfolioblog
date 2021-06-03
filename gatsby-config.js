@@ -9,10 +9,8 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         url:
-        // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
-          `https://yurikodarragh.com/graphql`,
+          `http://xs186302.xsrv.jp/graphql`,
         schema: {
-          //Prefixes all WP Types with "Wp" so "Post and allPost" become "WpPost and allWpPost".
           typePrefix: `Wp`,
         },
         develop: {
@@ -33,6 +31,8 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

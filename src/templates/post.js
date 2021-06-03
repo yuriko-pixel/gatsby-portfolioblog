@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import { graphql } from "gatsby"
 
 export default ({ data }) => {
-  const post = data.allWordpressPost.edges[0].node
+  const post = data.allWpPost.edges[0].node
   console.log(post)
   return (
     <Layout>
@@ -18,7 +18,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String) {
     allWpPost(filter: { slug: { eq: $slug } }) {
       edges {
         node {
