@@ -32,7 +32,15 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-fontawesome-css`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        // Override the file regex for Sass
+        sassRuleTest: /\.global\.s(a|c)ss$/,
+        // Override the file regex for CSS modules
+        sassRuleModulesTest: /\.mod\.s(a|c)ss$/,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
