@@ -28,6 +28,7 @@ const Menu = styled.div`
 `;
 
 const Close = styled.div`
+  text-align: left;
     font-size: 50px;
     font-weight: bold;
     color: white;

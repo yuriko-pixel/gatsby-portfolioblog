@@ -1,21 +1,119 @@
 import React from 'react'
 import styled from 'styled-components'
 import img from '../images/profile.jpg'
+import Nav from '../components/nav'
 
-const Container = styled.div``;
-const Profimg = styled.img``;
-const Box = styled.div``;
-const Title = styled.div``;
-const Title2 = styled.p``;
-const Box2 = styled.div``;
-const Box3 = styled.div``;
-const Likes = styled.div``;
-const BorederLine = styled.div``;
-const Flex = styled.div``;
-const FlexColumn = styled.div``;
-const FlexColumn2 = styled.div``;
-const LikeDesc = styled.div``;
-const LikeTitle = styled.span``;
+const Container = styled.div`
+    margin: 10px 20px;
+    text-align: center;   
+    min-height: 100vh;
+    font-family: 'Crimson Pro', serif;
+    font-size: 25px;
+    @media only screen and (max-width: 480px) {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+`;
+const Profimg = styled.img`
+    margin: 0 auto;
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:50%;
+    border: 1px solid black;
+`;
+
+const Title = styled.div`
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    text-align: left;
+    padding-left: 30px;
+    text-decoration: underline solid pink 5px;
+    margin: 25px 0;
+    @media only screen and (max-width: 480px) {
+        font-size: 25px;
+    }
+`;
+const Title2 = styled.p`
+    color: #DF8095
+`;
+
+const Box = styled.div`
+    width: 60%;
+    margin: 0 auto;
+    @media only screen and (max-width: 480px) {
+        width: 100%;
+    }
+`;
+const Box2 = styled.div`
+    margin-left: 150px;
+    @media only screen and (max-width: 480px) {
+        margin-left: 20px;
+        font-size: 15px;
+    }
+`;
+const Box3 = styled.div`
+    padding-left: 20px;
+    text-align: left;
+    @media only screen and (max-width: 480px) {
+        font-size: 15px;
+    }
+`;
+const Likes = styled.div`
+    margin-left: 150px;
+    @media only screen and (max-width: 480px) {
+        margin-left: 20px;
+    }
+`;
+const BorederLine = styled.div`
+    height: 230px;
+    width: 3px;
+    background: gray;
+    margin-left: 20px
+    @media only screen and (max-width: 480px) {
+        height: 150px;
+    }
+`;
+const Flex = styled.div`
+    display: flex;
+`;
+const FlexColumn = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    
+`;
+const FlexColumn2 = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+const LikeDesc = styled.div`
+    width: 500px;
+    min-height: 75px;
+    border-radius: 5px;
+    background: #364549;
+    font-family: system-ui;
+    font-size: 20px;
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 10px;
+    @media only screen and (max-width: 480px) {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+`;
+
+const LikeTitle = styled.span`
+margin-left: 30px;
+    font-size: 30px;
+    @media only screen and (max-width: 480px) {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+`;
 
 const HP = {'character': 'Luna Lovegood', 'favSeries':'Prizoner of Azkaban'};
 const travel = {'have visited': ['UK ,', 'LA ,','AUS ,', 'Netherland'], 'wantToVist': ['Germany ,', 'UAE']};
@@ -26,6 +124,7 @@ const booktitle = {'title': ['HarryPotter,' , ' Sherlock Holmes, ', ' Gone Girl'
 const About = () => {
     return (
         <Container>
+            <Nav/>
             <Profimg src={img} alt={img}/>
             <h3>Yuriko Darragh</h3>
             {/* <Link /> */}
