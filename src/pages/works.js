@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import data from '../work.json'
 import {Link} from 'gatsby'
-import Nav from '../components/nav'
+import Layout from '../components/layout'
 
 const Container = styled.div`
     width: 850px;
@@ -59,6 +59,14 @@ const Caption = styled.div`
 	color:			#fff;
 `;
 
+const Title = styled.h2`
+    text-align: center;
+    padding-top: 40px;
+`;
+
+const Wrapper = styled.div`
+    margin: 20px;
+`;
 
 const Works = ()=> {
     useEffect(()=> {
@@ -73,16 +81,14 @@ const Works = ()=> {
     </WorkCon>)});
 
     return (
-        <div>
-            <Nav/>
-        <h2>Works</h2>
+        <Layout>
         <Container>
+        <Title>Works</Title>
         <Flex>
         {arr}
-        
         </Flex>
         </Container>
-    </div>
+    </Layout>
     )
 }
 

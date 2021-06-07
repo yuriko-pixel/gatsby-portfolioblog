@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import img from '../images/profile.jpg'
-import Nav from '../components/nav'
+import Layout from '../components/layout'
 
 const Container = styled.div`
     margin: 10px 20px;
@@ -123,10 +123,11 @@ const booktitle = {'title': ['HarryPotter,' , ' Sherlock Holmes, ', ' Gone Girl'
 
 const About = () => {
     return (
-        <Container>
-            <Nav/>
-            <Profimg src={img} alt={img}/>
-            <h3>Yuriko Darragh</h3>
+        <Layout>
+            <Container>
+                <Profimg src={img} alt={img}/>
+                <h3>Yuriko Darragh</h3>
+            </Container>
             {/* <Link /> */}
             <Box>
                 <Title>Profile</Title>
@@ -207,7 +208,7 @@ const About = () => {
                     </LikeDesc>
                 </Likes>
             </Box>
-        </Container>
+        </Layout>
     )
 }
 

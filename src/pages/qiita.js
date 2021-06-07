@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 import Moment from 'react-moment';
-import Nav from '../components/nav'
+import Layout from '../components/layout'
 
 const LinkWrapper = styled.a`
     color: black;
@@ -87,13 +87,12 @@ const Qiita = ()=> {
         data = 'Loading...'
     }
     return (
-        <QiitContaner>
-        <Nav/>
+        <Layout>
         <Title>Qiita Articles</Title>
         <Flex>
             {data}
         </Flex>
-    </QiitContaner>
+    </Layout>
     )
 }
 

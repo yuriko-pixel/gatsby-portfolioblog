@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import cat from '../images/cat2.png'
-import Nav from '../components/nav'
+import Layout from '../components/layout'
 
 const Img = styled.img`
     width: 150px;
@@ -15,11 +15,10 @@ const Container = styled.div`
 
 const Contact = ()=> {
     return (
-        <Container>
-            <Nav/>
+        <Layout>
             <Img src={cat} alt={cat}/>
             <p>For any inquiry, please contact me via Github.</p>
-        </Container>
+        </Layout>
     )
 }
 

@@ -11,7 +11,6 @@ const Index =
   return (
     <Layout>
       <SEO title="home" />
-      <Nav/>
       <Top/>
       <Links/>
       <h4>Posts</h4>

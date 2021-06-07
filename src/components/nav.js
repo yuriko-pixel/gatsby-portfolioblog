@@ -25,6 +25,8 @@ const Menu = styled.div`
   width: 200px;
   min-height: 200px;
   position: absolute;
+  z-index: 1;
+  border-radius: 10px;
 `;
 
 const Close = styled.div`
