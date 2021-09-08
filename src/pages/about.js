@@ -119,7 +119,7 @@ const HP = {'character': 'Luna Lovegood', 'favSeries':'Prizoner of Azkaban'};
 const travel = {'have visited': ['UK ,', 'LA ,','AUS ,', 'Netherland'], 'wantToVist': ['Germany ,', 'UAE']};
 
 const cat = {'type': ['Munchkin ,', ' American Shorthair']}
-const booktitle = {'title': ['HarryPotter,' , ' Sherlock Holmes, ', ' Gone Girl']};
+const booktitle = {'title': ['HarryPotter,' ,'Kazuo Ishiguro(especially Remains of the Day and A Family Supper) ,', ' 19th century English/American Literature(Jane Austen, Edger Alan Poe, Henry James), ', 'Detective stories(Sherlock Holmes, Auguste Dupin, Agatha Christie),']};
 
 const About = () => {
     return (
